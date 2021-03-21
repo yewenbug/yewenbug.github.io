@@ -1,115 +1,138 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-	<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,minimal-ui" />
-    <title>新年 | 他日丶记</title>
-<link rel='stylesheet' id='puma-css'  href='https://yewenbug.github.io/styles/main.css' type='text/css' media='screen' />
-<link rel='stylesheet' id='puma-css'  href='https://at.alicdn.com/t/font_1306644_jwtuc2zzbrd.css' media='screen' />
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<script type='text/javascript' src='https://yewenbug.github.io/media/scripts/jquery.js'></script>
-<script type='text/javascript' src='https://yewenbug.github.io/media/scripts/jquery-migrate.min.js'></script>
-        <script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
-         <script >hljs.initHighlightingOnLoad();</script>
-         
-</head>
-<body class="single single-post postid-3788 single-format-standard">
-	<!--加入跟随滑动的顶部-->
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<h1 class="site-title">
-				<a href="https://yewenbug.github.io" title="他日丶记">他日丶记</a>
-			</h1>
-		</div>
+<html>
+  <head>
+    <meta charset="utf-8" >
 
-		<a class="primary-nav-trigger" href="javascript:void(0)">
-			<span class="menu-icon"></span>
-		</a>
-		
-	</header>
-		<div class="site-navigation-wrapper">
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<ul class="primary-nav">
-                    
-				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="首页" href="/">首页</a></li>
-                
-				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="归档" href="/archives">归档</a></li>
-                
-				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="标签" href="/tags">标签</a></li>
-                
-				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="关于" href="https://yewenbug.github.io/about">关于</a></li>
-                
-	
-			</ul>
-		</nav>			
-	</div>
-	<!--跟随滑动的顶部结束-->
-	<div class="surface-content">    <main class="main-content">
-        <section class="section-body">
-                            <header class="section-header u-textAlignCenter">
-                    <h2 class="grap--h2">新年</h2>
-                    <div class="block-postMetaWrap">
-                        <time>2014-01-01</time>
-                    </div>
-                </header>
-                <div class="grap">
-					
-					<p>新年第一天，下午坐在教室里看书，满书的逻辑推理和演算都快把我弄晕了。拿起手机玩就在QQ空间里胡乱写了一篇东西，大概是一些忧伤感慨的话吧，外加一些展望与期冀。沿袭一贯忧伤矫情的态度。</p>
+<title>新年 | 他日丶记</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://yewenbug.github.io/favicon.ico?v=1616320681324">
+<link rel="stylesheet" href="https://yewenbug.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="新年第一天，下午坐在教室里看书，满书的逻辑推理和演算都快把我弄晕了。拿起手机玩就在QQ空间里胡乱写了一篇东西，大概是一些忧伤感慨的话吧，外加一些展望与期冀。沿袭一贯忧伤矫情的态度。
+
+就这样发了出去，继续看书。
+晚上吃完饭回到宿舍打开空间瞄..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://yewenbug.github.io">
+        <img src="https://yewenbug.github.io/images/avatar.png?v=1616320681324" class="site-logo">
+        <h1 class="site-title">他日丶记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="https://yewenbug.github.io/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      流水账而已
+    </div>
+    <div class="site-footer">
+      2013~2021.Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://yewenbug.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">新年</h2>
+            <div class="post-date">2014-01-01</div>
+            
+            <div class="post-content" v-pre>
+              <p>新年第一天，下午坐在教室里看书，满书的逻辑推理和演算都快把我弄晕了。拿起手机玩就在QQ空间里胡乱写了一篇东西，大概是一些忧伤感慨的话吧，外加一些展望与期冀。沿袭一贯忧伤矫情的态度。</p>
 <!-- more -->
 <p>就这样发了出去，继续看书。<br>
 晚上吃完饭回到宿舍打开空间瞄了一眼，不料竟收到许多祝福和点赞，愕然。<br>
 我是比较孤僻的人，平时朋友甚少，以前同学的一些问候还是很感动的。不必多言，还是希望2014年能够多些快乐!</p>
 
-                </div>
+            </div>
+            
+            
 
-                <div class="post--keywords" itemprop="keywords">
-					          </div>
+            
 
+          </div>
 
-
-                      </section>
-    </main>
-</div>
-	<footer class="site-footer u-textAlignCenter">
-    	<div class="footer-branding">
-            <a href="https://yewenbug.github.io" title="他日丶记">他日丶记</a>
-									
-			         </div>
-		 <hr />
-		 <div class="social-links">
-		                       
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-                            
-                           
-				</div>
-        <div class="footer-copy">
-                2013~2021.Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
         </div>
+      </div>
+    </div>
 
-    </footer>
-	<div class="back-to-top u-hide" onclick="backToTop();"><i class="iconfont icon-xiangshang"></i></div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
 
-<script type='text/javascript' src='https://yewenbug.github.io/media/scripts/main.js'></script>
-</body>
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
 </html>
