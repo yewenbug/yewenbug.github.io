@@ -1,95 +1,101 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+
 <title>Time | 他日丶记</title>
-<link rel="shortcut icon" href="https://yewenbug.github.io/favicon.ico?v=1616326736758">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://yewenbug.github.io/favicon.ico?v=1616922811560">
 <link rel="stylesheet" href="https://yewenbug.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Time | 他日丶记 - Atom Feed" href="https://yewenbug.github.io/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
     <meta name="description" content="概念中，时间大概分为三种：好时间，坏时间和垃圾时间(Garbage time)。
 好时间能让人充实，促使人向上前行，比如在学校读书和成长的日子；比如游戏中的主线和重要的无法跳过的副本任务。坏时间大概可以理解为一丁点的偷懒时间吧，偶尔将自己从..." />
     <meta name="keywords" content="" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://yewenbug.github.io">
-  <img class="avatar" src="https://yewenbug.github.io/images/avatar.png?v=1616326736758" alt="">
-  </a>
-  <h1 class="site-title">
-    他日丶记
-  </h1>
-  <p class="site-description">
-    流水账而已
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://yewenbug.github.io">
+        <img src="https://yewenbug.github.io/images/avatar.png?v=1616922811560" class="site-logo">
+        <h1 class="site-title">他日丶记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="/" class="menu">
-          首页
-        </a>
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
       
-        <a href="/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="https://yewenbug.github.io/about" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="https://yewenbug.github.io/about" class="menu">
-          关于
-        </a>
-      
-    
+    </div>
   </div>
-  <div class="social-container">
-    
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
+      
+    </div>
+    <div class="site-description">
+      流水账而已
+    </div>
+    <div class="site-footer">
+      2013~2021 &copy;他日记 | <a class="rss" href="https://yewenbug.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
   </div>
 </div>
 
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              Time
-            </h2>
-            <div class="post-info">
-              <span>
-                2016-05-29
-              </span>
-              <span>
-                2 min read
-              </span>
-              
-            </div>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Time</h2>
+            <div class="post-date">2016-05-29</div>
             
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <p>概念中，时间大概分为三种：好时间，坏时间和垃圾时间(Garbage time)。</p>
+            <div class="post-content" v-pre>
+              <p>概念中，时间大概分为三种：好时间，坏时间和垃圾时间(Garbage time)。</p>
 <p>好时间能让人充实，促使人向上前行，比如在学校读书和成长的日子；比如游戏中的主线和重要的无法跳过的副本任务。坏时间大概可以理解为一丁点的偷懒时间吧，偶尔将自己从好时间中抽离出来，干一些看起来与现在从事的主事有点脱节的小事。像游戏中小的副本，主线任务看起来很难，那不管，先偷懒来刷刷小副本。还有一种Garbage time，将本来很重要的时间用来做很无聊的事情。想到一个很好笑的情形：游戏挂着机，游戏者却趴在在键盘上睡觉。<!--more--></p>
 <p>可惜的是，目前来看我生命中度过的大部分时间都是Garbage time，客气点算起来有一半吧。</p>
 <p>我总是为不去学习找各种理由，完成Good time到Bad time再到Garbage time的”华丽”转变。有时也会感到愧疚难当，觉得对不起自己，父母还有关心自己的人。不过麻木和懒惰总会战胜负疚，那些心情和警醒也会烟消云散。</p>
@@ -97,76 +103,45 @@
 <p>没错，我是个容易警醒的人，如何将Good time从滑向Garbage time的边缘拉扯回来，将是我青年时期的头等大事了。</p>
 <p>所谓奋斗另一种解释大概便是此了。</p>
 
-              </div>
-              <div class="toc-container">
-                
-              </div>
             </div>
-          </article>
-        </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://yewenbug.github.io/FyFJ1Ywie/">
+                  <h3 class="post-title">
+                    假戏亦真做
+                  </h3>
+                </a>
+              </div>
+            
 
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://yewenbug.github.io/FyFJ1Ywie/">
-              <h3 class="post-title">
-                假戏亦真做
-              </h3>
-            </a>
+            
+
           </div>
-        
 
-        
-
-        <div class="site-footer">
-  2013~2021 &copy;他日记
-  <a class="rss" href="https://yewenbug.github.io/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
-</div>
-
+        </div>
       </div>
     </div>
 
-    <script>
-      hljs.initHighlightingOnLoad()
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
 
-      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+AOS.init();
 
-      // This should probably be throttled.
-      // Especially because it triggers during smooth scrolling.
-      // https://lodash.com/docs/4.17.10#throttle
-      // You could do like...
-      // window.addEventListener("scroll", () => {
-      //    _.throttle(doThatStuff, 100);
-      // });
-      // Only not doing it here to keep this Pen dependency-free.
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
-      window.addEventListener("scroll", event => {
-        let fromTop = window.scrollY;
+</script>
 
-        mainNavLinks.forEach((link, index) => {
-          let section = document.getElementById(decodeURI(link.hash).substring(1));
-          let nextSection = null
-          if (mainNavLinks[index + 1]) {
-            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-          }
-          if (section.offsetTop <= fromTop) {
-            if (nextSection) {
-              if (nextSection.offsetTop > fromTop) {
-                link.classList.add("current");
-              } else {
-                link.classList.remove("current");    
-              }
-            } else {
-              link.classList.add("current");
-            }
-          } else {
-            link.classList.remove("current");
-          }
-        });
-      });
 
-    </script>
+
+
+
+
   </body>
 </html>
